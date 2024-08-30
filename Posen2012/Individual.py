@@ -4,3 +4,10 @@
 # @FileName: Individual.py
 # @Software  : PyCharm
 # Observing PEP 8 coding style
+import numpy as np
+
+
+class Individual:
+    def __init__(self, N=None):
+        self.N = N
+        self.belief = [np.random.uniform(0, 1) for _ in range(N)]
